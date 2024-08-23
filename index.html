@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+
+    <h2>Hello, Welcome to my first calculator invention!</h2>
+    <p> I called it the <em>ASD-Calc</em></p>
+
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+        }
+        .calculator {
+            background: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .calculator input,
+        .calculator button {
+            display: block;
+            width: 100%;
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .calculator button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .calculator button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Simple Calculator</h1>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <button onclick="performCalculation('add')">Add</button>
+        <button onclick="performCalculation('subtract')">Subtract</button>
+        <p id="result">Result will appear here</p>
+    </div>
+
+    <script>
+        function performCalculation(operation) {
+            // Get the values from the input fields
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            let result;
+
+            // Perform the calculation based on the operation
+            if (operation === 'add') {
+                result = num1 + num2;
+            } else if (operation === 'subtract') {
+                result = num1 - num2;
+            }
+
+            // Display the result
+            document.getElementById('result').textContent = `The result is: ${result}`;
+        }
+    </script>
+</body>
+
+<p id="p1"></p>;
+
+</html>
+
+
+<style>
+    body {
+      background-color: grey;
+    }
+    
+    p {
+      font-family: verdana;
+      font-size: 20px;
+    }
+</style>
+    </head>
+    
+    
+<a href="https://www.w3schools.com/"> Learn to code here!</a>
+
+<a href="https://www.geeksforgeeks.org/javascript-calculator/">
+ Calculator Idea click here!
+</a>
+    
